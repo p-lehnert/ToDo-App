@@ -9,6 +9,8 @@ module de.app.todo {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
+    requires javax.persistence;
+    requires lombok;
 
     opens de.app.todo to javafx.fxml;
     exports de.app.todo;

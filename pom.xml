@@ -12,9 +12,24 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.version>5.7.1</junit.version>
+        <hibernate.version>6.1.5.Final</hibernate.version>
+        <lombok.version>1.18.24</lombok.version>
     </properties>
 
     <dependencies>
+
+
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>persistence-api</artifactId>
+            <version>1.0.2</version>
+            <scope>compile</scope>
+        </dependency>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
@@ -89,6 +104,11 @@
             <artifactId>junit-jupiter-engine</artifactId>
             <version>${junit.version}</version>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
         </dependency>
     </dependencies>
 
